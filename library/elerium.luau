@@ -235,7 +235,7 @@ textBox.Parent = prefabs
 textBox.BackgroundColor3 = Color3.new(1, 1, 1)
 textBox.BackgroundTransparency = 1
 textBox.BorderSizePixel = 0
-textBox.Size = UDim2.new(1, 0, 0, 20)
+textBox.Size = UDim2.new(0.5, 0, 0, 20)
 textBox.ZIndex = 2
 textBox.Font = Enum.Font.Highway
 textBox.PlaceholderColor3 = Color3.new(0.698039, 0.698039, 0.698039)
@@ -336,7 +336,7 @@ dropdown.BackgroundColor3 = Color3.new(1, 1, 1)
 dropdown.BackgroundTransparency = 1
 dropdown.BorderSizePixel = 0
 dropdown.Position = UDim2.new(-0.055555556, 0, 0.0833333284, 0)
-dropdown.Size = UDim2.new(0, 200, 0, 20)
+dropdown.Size = UDim2.new(0.5, 0, 0, 20)
 dropdown.ZIndex = 2
 dropdown.Font = Enum.Font.Highway
 dropdown.Text = "      Dropdown"
@@ -428,7 +428,7 @@ button.Parent = folder
 button.BackgroundColor3 = Color3.new(0.160784, 0.290196, 0.478431)
 button.BackgroundTransparency = 1
 button.BorderSizePixel = 0
-button.Size = UDim2.new(1, 0, 0, 20)
+button.Size = UDim2.new(0.5, 0, 0, 20)
 button.ZIndex = 2
 button.Font = Enum.Font.Highway
 button.Text = "      Folder"
@@ -2051,5 +2051,7 @@ local object = prefabs:FindFirstChild("DropdownButton"):Clone()
 
 	return window_data, Window
 end
+
+
 
 return library
