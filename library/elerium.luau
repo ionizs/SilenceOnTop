@@ -140,10 +140,14 @@ toggle.Parent = bar
 toggle.BackgroundColor3 = Color3.new(1, 1, 1)
 toggle.BackgroundTransparency = 1
 toggle.Position = UDim2.new(0, 5, 0, -2)
-toggle.Rotation = 90
+toggle.Rotation = 0
 toggle.Size = UDim2.new(0, 20, 0, 20)
 toggle.ZIndex = 2
 toggle.Image = "https://www.roblox.com/Thumbs/Asset.ashx?width=420&height=420&assetId=131783302316501"
+
+local toggleCorner = Instance.new("UICorner")
+toggleCorner.CornerRadius = UDim.new(0, 6)
+toggleCorner.Parent = toggle
 
 base.Name = "Base"
 base.Parent = bar
@@ -1076,7 +1080,7 @@ function library:AddWindow(title, options)
 
 					Resizer.Active = true
 
-					Resize(open_close, {Rotation = 90}, options.tween_time)
+					Resize(open_close, {Rotation = 0}, options.tween_time)
 					Resize(Window, {Size = UDim2.new(0, Window.AbsoluteSize.X, 0, oldy)}, options.tween_time)
 					open_close.Parent:FindFirstChild("Base").Transparency = 0
 
@@ -1996,7 +2000,7 @@ local object = prefabs:FindFirstChild("DropdownButton"):Clone()
 								Resize(toggle, {Rotation = 0}, options.tween_time)
 								objects.Visible = false
 							else -- Open
-								Resize(toggle, {Rotation = 90}, options.tween_time)
+								Resize(toggle, {Rotation = 0}, options.tween_time)
 								objects.Visible = true
 							end
 
